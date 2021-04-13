@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Text to the left, image to the right</title>
+    <style>
+      .some-page-wrapper {
+        margin: 15px;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="some-page-wrapper">
+      <div class="row">
+        <div class="column">
+          <div>
+            <p>
+              See code at
+              <a href="https://jsfiddle.net/ivofernandes/wa0hbc3d/3/"
+                >jsfiddle</a
+              >
+              <br /><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              quis massa justo, sed venenatis velit! Integer porttitor, mauris
+              at s sit amet mauris tristique vitae rutrum ipsum fermentum!
+              Vivamus ac odio magna, non pulvinar ipsum. Etiam volutpat
+              convallis eleifend. Mauris consequat sollicitudin turpis, ac
+              aliquet nulla rhoncus in! Sed condimentum lacus ac mi porta nec
+              dictum neque viverra!
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="green-column">
+            <img
+              style="float: right;"
+              alt=""
+              src="http://www.gravatar.com/avatar/3735d09bdf26f416ac0ae3cd6c634bbb?s=128&d=identicon&r=PG"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="float: left;"></div>
+  </body>
+</html>
